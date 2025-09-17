@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+:root {
+    --oq: white;
+    --qora: black;
+    --purple: #6C63FF;
+}
+
+.dark {
+    --oq: black;
+    --qora: white;
+    --purple: #6C63FF;
+}
+
+body {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: var(--oq);
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--qora);
+    margin-bottom: 20px;
+}
+
+#add-btn,
+#dark-btn {
+    padding: 12px 24px;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+}
+
+#save-btn {
+    padding: 12px 24px;
+    background-color:green;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    display: none;
+}
+
+#input {
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    outline: none;
+}
+
+#add-btn {
+    padding: 12px 24px;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+}
+
+#add-btn:hover {
+    background-color: var(--purple);
+    cursor: pointer;
+}
+
+#dark-btn:hover {
+    background-color: var(--purple);
+    cursor: pointer;
+}
+
+#sun {
+    display: none;
+}
+
+#ul {
+    width: 850px;
+    margin: 20px auto;
+    list-style: none;
+}
+
+#ul li, div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    
+}
+#ul li{
+    padding: 15px;
+    border-bottom: 1px solid var(--purple);
+}
+
+li p {
+    font-size: 18px;
+    color: var(--qora);
+}
+
+ul input {
+    width: 25px;
+    height: 25px;
+}
+
+li button {
+    padding: 8px 16px;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+}
+
+li button:nth-child(1) {
+    color: green;
+    cursor: pointer;
+}
+
+li button:nth-child(2) {
+    color: red;
+    cursor: pointer;
+}
